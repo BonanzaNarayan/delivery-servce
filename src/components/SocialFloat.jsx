@@ -85,7 +85,7 @@ const SocialFloat = () => {
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
-                custom={index}
+                custom={contact.id}
                 whileHover="hover"
                 whileTap="tap"
                 href={contact.link}
@@ -94,7 +94,7 @@ const SocialFloat = () => {
                 className={`${contact.color} w-12 h-12 rounded-full 
                   flex items-center justify-center text-white shadow-lg
                   relative group`}
-                onMouseEnter={() => setActiveTooltip(index)}
+                onMouseEnter={() => setActiveTooltip(contact.id)}
                 onMouseLeave={() => setActiveTooltip(null)}
               >
                 {contact.icon}
@@ -103,7 +103,7 @@ const SocialFloat = () => {
                 <div className={`absolute right-14 top-1/2 -translate-y-1/2
                   bg-gray-800 text-white px-4 py-2 rounded-lg text-sm
                   shadow-md transition-opacity duration-200
-                  ${activeTooltip === index ? 'opacity-100' : 'opacity-0'}`}>
+                  ${activeTooltip === contact.id ? 'opacity-100' : 'opacity-0'}`}>
                   <span>{contact.label}</span>
                   <div className="absolute right-[-4px] top-1/2 -translate-y-1/2
                     w-2 h-2 bg-gray-800 rotate-45" />
