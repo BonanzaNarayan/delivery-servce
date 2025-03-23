@@ -85,10 +85,7 @@ function Home() {
                   <div className="absolute inset-0 bg-orange-100/50 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{title}</h3>
-                <p className="text-gray-600">24/7 express delivery with real-time tracking updates</p>
-                <button className="mt-4 flex items-center gap-2 text-orange-600 hover:text-orange-700 transition-colors">
-                  Learn More <FiArrowRight className="inline-block" />
-                </button>
+                <p className="text-gray-600">24/7 express delivery with tracking updates</p>
               </motion.div>
             ))}
           </motion.div>
@@ -110,15 +107,15 @@ function Home() {
                 Comprehensive logistics solutions tailored to your business needs
               </p>
               <div className="space-y-6">
-                {['E-commerce Delivery', 'Temperature Control', 'Oversized Loads'].map(
+                {['E-commerce Delivery', 'Temperature Control', 'Oversized Loads', 'Food Delivery'].map(
                   (service, index) => (
                     <motion.div
                       key={index}
                       whileHover={{ x: 10 }}
                       whileTap={{ scale: 0.98 }}
-                      className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer"
+                      className="flex items-center gap-4 bg-white p-3 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer"
                     >
-                      <div className="p-3 bg-orange-100 rounded-lg">
+                      <div className="p-2 bg-orange-100 rounded-lg">
                         <FaShippingFast className="w-6 h-6 text-orange-600" />
                       </div>
                       <span className="font-semibold">{service}</span>

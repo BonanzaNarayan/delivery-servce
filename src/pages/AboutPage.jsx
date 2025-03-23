@@ -7,9 +7,9 @@ import SocialFloat from '../components/SocialFloat';
 
 const AboutPage = () => {
   const stats = [
-    { icon: <FiTruck />, number: '10M+', label: 'Deliveries Made' },
+    { icon: <FiTruck />, number: '1000+', label: 'Deliveries Made' },
     { icon: <FiUsers />, number: '500+', label: 'Dedicated Staff' },
-    { icon: <FiAward />, number: '15+', label: 'Industry Awards' },
+    { icon: <FiAward />, number: '10+', label: 'Industry Awards' },
     { icon: <FiPackage />, number: '95%', label: 'On-Time Rate' },
   ];
 
@@ -30,7 +30,7 @@ const AboutPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="relative z-10 text-center px-4"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Delivering Excellence Worldwide</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Delivering Excellence Nationwide</h1>
           <p className="text-xl md:text-2xl max-w-2xl mx-auto text-gray-300">
             Pioneering logistics solutions since 2010 with innovation and customer-centric approach
           </p>

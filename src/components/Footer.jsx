@@ -104,7 +104,7 @@ const Footer = () => {
                 <motion.a
                   key={i}
                   whileHover={{ x: 5 }}
-                  className="flex items-center gap-2 text-gray-400 hover:text-orange-500 transition-colors"
+                  className="flex items-center w-fit gap-2 text-gray-400 hover:text-orange-500 transition-colors"
                   href={link.link}
                 >
                   <FiArrowRight className="text-orange-500" />

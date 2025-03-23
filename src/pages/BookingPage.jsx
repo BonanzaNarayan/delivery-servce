@@ -13,6 +13,7 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SocialFloat from '../components/SocialFloat';
+import { motion } from 'framer-motion';
 
 const BookingPage = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ const BookingPage = () => {
   };
 
   const calculatePrice = () => {
-    const base = 5;
+    const base = 0;
     const weight = parseFloat(formData.itemWeight) || 0;
     return (base + (weight * 1.5)).toFixed(2);
   };
@@ -67,14 +68,14 @@ const BookingPage = () => {
 📦 Item: ${formData.itemName}
 📌 Type: ${formData.itemType}
 ⚖️ Weight: ${formData.itemWeight} kg
-💎 Value: $${formData.itemValue || '0'}
+💎 Value: GHC${formData.itemValue || '0'}
 📝 Instructions: ${formData.specialInstructions || 'None'}
 
 *Schedule:*
 📅 Pickup Date: ${formData.pickupDate}
 📅 Delivery Date: ${formData.deliveryDate}
 
-Estimated Cost: $${calculatePrice()}
+Estimated Cost: GHC${calculatePrice()}
 
 Please confirm this shipment request.`;
 
@@ -91,6 +92,7 @@ Please confirm this shipment request.`;
     <>
       <Header />
       <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+
         <div className="max-w-3xl mx-auto">
           <div className="bg-white shadow-lg rounded-lg p-8">
             {/* Service Highlights */}
@@ -129,7 +131,7 @@ Please confirm this shipment request.`;
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white">
               {/* Sender Information */}
               <div className="border-l-4 border-orange-500 pl-4">
                 <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
@@ -251,7 +253,7 @@ Please confirm this shipment request.`;
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700">Declared Value ($)</label>
+                    <label className="block text-sm font-medium text-gray-700">Item(s) Value ($)</label>
                     <input
                       type="number"
                       name="itemValue"
@@ -276,7 +278,7 @@ Please confirm this shipment request.`;
                   <FaMoneyBillWave className="text-orange-600 text-xl" />
                   <div>
                     <p className="text-sm font-medium">
-                      Estimated Cost: <span className="text-lg">${calculatePrice()}</span>
+                      Estimated Cost: <span className="text-lg">GHC{calculatePrice()}</span>
                       <span className="text-gray-500 ml-2">(Base $5 + ${formData.itemWeight || 0}kg × $1.50/kg)</span>
                     </p>
                   </div>

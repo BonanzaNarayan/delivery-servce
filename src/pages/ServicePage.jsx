@@ -18,19 +18,19 @@ const ServicesPage = () => {
       icon: <FaShippingFast className="w-12 h-12" />,
       title: "Express Delivery",
       description: "24/7 nationwide delivery with real-time tracking",
-      image: "https://images.unsplash.com/photo-1601050435899-5d53b3c5b7f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+      image: "https://www.shutterstock.com/image-photo/food-delivery-moto-scooter-driver-600nw-1730162416.jpg"
     },
     {
       icon: <MdSecurity className="w-12 h-12" />,
       title: "Secure Handling",
       description: "Fully insured packages with premium protection",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      image: "https://www.motodeal.com.ph/custom/blog-post/header/delivery-rider-5eaf9ce7c83af.jpg"
     },
     {
       icon: <GiPriceTag className="w-12 h-12" />,
       title: "Price Match",
       description: "Best price guarantee with transparent pricing",
-      image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      image: "https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/v2/GKLNNEWAJ7JKQGVRGNDFPTAKPY.jpg?smart=true&auth=095b20b6f3a0b26e3e4bd21aa93750d4ed0ee90f5fa3d6109656a0696822aa48&width=400&height=225"
     }
   ];
 
@@ -51,7 +51,7 @@ const ServicesPage = () => {
       >
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            src="https://static.vecteezy.com/system/resources/previews/042/660/756/non_2x/ai-generated-closeup-of-pair-of-white-boots-splashing-through-spring-flowers-ai-generative-photo.jpeg"
             alt="Warehouse"
             className="w-full h-full object-cover opacity-50"
           />
