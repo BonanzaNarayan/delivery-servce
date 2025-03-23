@@ -8,24 +8,28 @@ const SocialFloat = () => {
 
   const contacts = [
     {
+      id: 1,
       icon: <FaWhatsapp />,
       label: 'Chat on WhatsApp',
       color: 'bg-green-500',
       link: 'https://wa.me/1234567890',
     },
     {
+        id: 2,
       icon: <FaFacebookMessenger />,
       label: 'Message on Messenger',
       color: 'bg-blue-600',
       link: 'https://m.me/yourpage',
     },
     {
+        id: 3,
       icon: <FaPhone />,
       label: 'Call Us',
       color: 'bg-purple-600',
       link: 'tel:+1234567890',
     },
     {
+        id: 4,
       icon: <FaEnvelope />,
       label: 'Send Email',
       color: 'bg-red-500',
@@ -74,9 +78,9 @@ const SocialFloat = () => {
             exit={{ opacity: 0, y: 100 }}
             className="absolute bottom-full right-0 mb-4 space-y-4"
           >
-            {contacts.map((contact, index) => (
+            {contacts.map((contact) => (
               <motion.a
-                key={index}
+                key={contact.id}
                 variants={itemVariants}
                 initial="hidden"
                 animate="visible"

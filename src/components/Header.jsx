@@ -20,7 +20,7 @@ const Header = () => {
   const navItems = [
     { id: 1, name: 'Home', href: '/' },
     { id: 2, name: 'Services', href: '/services' },
-    { id: 4, name: 'Contact', href: '/contact' },
+    { id: 3, name: 'Contact', href: '/contact' },
     { id: 4, name: 'About Us', href: '/about' },
   ]
 

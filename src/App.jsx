@@ -5,6 +5,7 @@ import BookingPage from './pages/BookingPage'
 import ServicesPage from './pages/ServicePage'
 import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage'
+import Error404 from './pages/ErrorPage'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/services' element={<ServicesPage />} />
       <Route path='/contact' element={<ContactPage />} />
       <Route path='/about' element={<AboutPage />} />
+      <Route path='*' element={<Error404 />} />
     </Routes>
   )
 }

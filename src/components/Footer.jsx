@@ -93,12 +93,12 @@ const Footer = () => {
                 link: "/services"
               },
                 {
-                    text: "Pricing",
-                    link: "/pricing"
-                },
-                {
                     text: "Contact",
                     link: "/contact"
+                },
+                {
+                    text: "Book Us",
+                    link: "/booking"
                 },
             ].map((link, i) => (
                 <motion.a
