@@ -45,11 +45,11 @@ const BookingPage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const calculatePrice = () => {
-    const base = 0;
-    const weight = parseFloat(formData.itemWeight) || 0;
-    return (base + (weight * 1.5)).toFixed(2);
-  };
+  // const calculatePrice = () => {
+  //   const base = 0;
+  //   const weight = parseFloat(formData.itemWeight) || 0;
+  //   return (base + (weight * 1.5)).toFixed(2);
+  // };
 
   const generateWhatsAppMessage = () => {
     const message = `📦 *New Delivery Request* 📦
@@ -108,10 +108,6 @@ Please confirm this shipment request.`;
               <div className="p-4 bg-orange-50 rounded-lg">
                 <FaMoneyBillWave className="text-orange-600 mx-auto text-2xl mb-2" />
                 <p className="text-sm font-medium">Price Match Guarantee</p>
-              </div>
-              <div className="p-4 bg-orange-50 rounded-lg">
-                <FaBox className="text-orange-600 mx-auto text-2xl mb-2" />
-                <p className="text-sm font-medium">Real-time Tracking</p>
               </div>
             </div>
 
@@ -274,7 +270,7 @@ Please confirm this shipment request.`;
                 </div>
 
                 {/* Price Calculator */}
-                <div className="mt-4 p-4 bg-orange-50 rounded-lg flex items-center gap-3">
+                {/* <div className="mt-4 p-4 bg-orange-50 rounded-lg flex items-center gap-3">
                   <FaMoneyBillWave className="text-orange-600 text-xl" />
                   <div>
                     <p className="text-sm font-medium">
@@ -282,7 +278,7 @@ Please confirm this shipment request.`;
                       <span className="text-gray-500 ml-2">(Base $5 + ${formData.itemWeight || 0}kg × $1.50/kg)</span>
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Prohibited Items */}
                 <div className="mt-4 p-4 bg-red-50 rounded-lg flex gap-3">
